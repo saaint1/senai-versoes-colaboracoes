@@ -1,0 +1,1 @@
+fiz a atividade primeiro sem conectar o git bash na pasta e depois refiz em um novo arquvio "novo"
