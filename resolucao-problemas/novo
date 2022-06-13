@@ -1,6 +1,8 @@
-let listaDeEstudantes = ["Helena", "Chico", "Mário"];  
-let    quantidadeDeEstudantes =  listaDeEstudantes.length;  
-for (let indice = 0; indice < quantidadeDeEstudantes;     indice++) {  
-    const alunoCorrente = listaDeEstudantes[indice];  
-    console.log(alunoCorrente);
+let listaDeEstudantes = ["Helena", "Chico", "Mário", "José", "Maria"];  
+let quantidadeDeEstudantes = listaDeEstudantes.length;  
+if (quantidadeDeEstudantes < 5) {  
+listaDeEstudantes.push("João");  
+    console.log(listaDeEstudantes);  
+} else {  
+console.log("Não é  possível inserir mais alunos nessa turma");  
 }
