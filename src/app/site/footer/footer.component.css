@@ -1,4 +1,8 @@
 .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     overflow: hidden;
     background-color: black;
     padding: 20px 10px;
