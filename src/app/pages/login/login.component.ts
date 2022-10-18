@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
+import { User } from 'src/app/model/user';
+import { UserService } from 'src/app/services/user.service';
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,7 +11,7 @@ import * as $ from "jquery";
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor( private userService: UserService) { }
 
   ngOnInit(): void {
   }
@@ -23,5 +27,25 @@ $(document).ready(function(){
   }
  })
 });
+
+userModel = new User()
+
+receberDados(){
+  console.log(this.userModel);
+  this.userService.logarUsuario(this.userModel).subscribe({
+    next: (response) => {
+      console.log ("Deu Certo");
+      console.log (sucesso);
+      this.mensagem = "Logido com sucesso";
+
+    },
+    error: (err) => {
+      console.log("Deu erro");
+      console.log (err);
+      this.mensagem = "Email ou Senha inválido";
+    }
+  })
+}
+
 
 

@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "ppp@mail.com",
+      "password": "$2a$10$lOe6iPrbuYMCNOgNC0ixReIQqDlRsgE.24Ehbyvp/CPrESTTpQefG",
+      "id": 1
+    },
+    {
+      "email": "paula@mail.com",
+      "password": "$2a$10$wLyFjwwF8z2PNTMcfSuCWO62BuzPjAw1Bl1YrpQq9Q9tH/e8xSZ5u",
+      "id": 2
+    },
+    {
+      "email": "santos@mail.com",
+      "password": "$2a$10$TGktu9khtK/.UAXV4Bz5gupRjpjjQpYtyLnTqzVeOL2bjIB0jQAh2",
+      "id": 3
+    }
+  ]
+}

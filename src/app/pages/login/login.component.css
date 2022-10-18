@@ -309,3 +309,7 @@
     font-weight: 900;
   }
   
+.error {
+  color: white;
+  background-color: red;
+}
